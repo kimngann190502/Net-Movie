@@ -27,7 +27,6 @@ header .overlay {
     z-index: 1;
 }
 
-
 .nav-img{
   
     max-width: 110px;
@@ -43,13 +42,12 @@ header .overlay {
 }
 
 .imt{
-
     max-width: 330px;
     margin-top: 150px;
     margin-right: 452px;
     margin-left: -2px;
-
 }
+
 .fonts{
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -59,18 +57,17 @@ header .overlay {
     max-width: 12px;
     color: white;
 }
-.ic:hover{
 
+.ic:hover{
     color: black;
 }
-.bt:hover{
 
+.bt:hover{
     color: black;
     background-color: white;
 }
 
 .bt{
-
     background-color: rgba(51, 51, 51, 0.4);
     color: white;
 }
@@ -81,70 +78,74 @@ header .overlay {
     margin-top: 312px;
 }
 
-
-
-
 .slider {
-        width: 70%;
-       
-    }
+    width: 70%;
+}
 
-    .slick-slide {
-      margin: 0px 5px;
-    }
+.slick-slide {
+    margin: 0px 5px;
+}
 
-    .slick-slide img {
-      width: 100%;
-    }
+.slick-slide img {
+    width: 100%;
+}
 
-    .slick-prev:before,
-    .slick-next:before {
-      color: rgb(233, 15, 15);
-    }
-
-
-    
-  
-
-
+.slick-prev:before,
+.slick-next:before {
+    color: rgb(233, 15, 15);
+}
 
 html {
     scroll-behavior: smooth;
 }
- body {
+body {
     margin: 0;
     background-color: #000;
     overflow-x: hidden;
-  
 }
- h1 {
-     font-family: Arial;
-     color: red;
-     text-align: center;
+h1 {
+    font-family: Arial;
+    color: red;
+    text-align: center;
 }
- .wrapper {
-     display: grid;
-     grid-template-columns: repeat(5, 100%);
-     overflow: hidden;
-     scroll-behavior: smooth;
-   margin-top:  0px;
-   margin-bottom: -71px;
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(5, 100%);
+    overflow: hidden;
+    scroll-behavior: smooth;
+    margin-top:  0px;
+    margin-bottom: -71px;
+}
 
+.wrapper section {
+    width: 97.5%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
 }
- .wrapper section {
-     width: 97.5%;
-     position: relative;
-     display: grid;
-     grid-template-columns: repeat(5, auto);
-}
+
 .item {
-     padding: 10px 1px;
-     transition: 150ms all;
-   transition: transform .2s;
-  background-size: cover;
+    padding: 10px 1px;
+    transition: 150ms all;
+    transition: transform .2s;
+    background-size: cover;
 }
- .item:hover {
-    
-     transform: scale(1.2);
-   
+
+.item:hover {
+    transform: scale(1.2);
+}
+
+header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
