@@ -76,9 +76,6 @@
       </div>
         <div class="pb-5" id="myItems">
          <div class="row" id="results">
-     
-          <!-- js loading data-->
-           
          </div>
        </div>
     </div>
@@ -90,12 +87,8 @@
       <script src="https://kit.fontawesome.com/f50700485d.js" crossorigin="anonymous"></script>
       
  <script>
-  $(document).ready(function () {
-          //adds menu.html content into any "#menu" element
-          //$('#masters').load('/htmls/masterpage.html');
-          //$(".card-columns").slice(0, 3).show();
+  $(document).ready(function () {       
           $(window).scroll(function() {
-          // checks if window is scrolled more than 500px, adds/removes solid class
           if($(this).scrollTop() > 10) { 
               $('.navbar').addClass('solid');
           } else {
@@ -120,11 +113,7 @@
         }
     }
 }
-
-
 </script>
-      
-
-
+<script src="/js/movielist.js"></script>
 </body>
 </html>
