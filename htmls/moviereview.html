@@ -56,7 +56,7 @@
     ></script>
 
     <script src="/js/movie-review.js"></script>
-    
+
     <script>
       $(document).ready(function () {
               //adds menu.html content into any "#menu" element
@@ -73,5 +73,37 @@
           });
     </script>
     
+    <script>
+   
+      var videos = document.querySelectorAll(".vt");
+         
+        
+         videos.forEach(video=> {
+         
+         video.addEventListener("mouseover", function(){
+            this.play()
+            //alert()
+         })
+         
+         video.addEventListener("mouseout", function(){
+      
+            this.pause();
+            //this.poster="/htmls/images/slide2.jpg"
+            this.load();
+         })
+         
+      
+         })
+      
+      
+         videos.forEach(function(vid, idx) {
+          vid.addEventListener('ended', resetVideo, false);
+        });
+      
+        function resetVideo(e) {
+          this.load();
+        }
+      </script>
+      
   </body>
 </html>
