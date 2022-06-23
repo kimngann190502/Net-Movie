@@ -13,7 +13,7 @@ import User from "./pages/user/User";
 import NewUser from "./pages/newUser/NewUser";
 import Login from "./pages/login/Login";
 import { AuthContext } from "./context/authContext/AuthContext";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import ListList from "./pages/listList/ListList";
 import List from "./pages/list/List";
 import NewList from "./pages/newList/NewList";
@@ -26,7 +26,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/login">{user ? <Redirect to="/" /> : <Login />}</Route>
+        <Route path="/login">{!user ? <Login /> : <Redirect to="/" />}</Route>
         {user && (
           <>
             <Topbar />

@@ -1,4 +1,3 @@
-import React from 'react'
 import "./listList.css";
 import { DataGrid } from "@material-ui/data-grid";
 import { DeleteOutline } from "@material-ui/icons";
@@ -30,9 +29,7 @@ export default function ListList() {
       renderCell: (params) => {
         return (
           <>
-            <Link
-              to={{ pathname: "/list/" + params.row._id, list: params.row }}
-            >
+            <Link to={{ pathname: "/list/" + params.row._id, list: params.row }}>
               <button className="productListEdit">Edit</button>
             </Link>
             <DeleteOutline

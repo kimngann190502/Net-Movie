@@ -1,5 +1,4 @@
 import { Link, useLocation } from "react-router-dom";
-import React from 'react'
 import "./movie.css";
 import { Publish } from "@material-ui/icons";
 
@@ -9,8 +8,8 @@ export default function Movie() {
   return (
     <div className="product">
       <div className="productTitleContainer">
-        <h1 className="productTitle">Movie</h1>
-        <Link to="/newproduct">
+        <h1 className="productTitle">Edit Movie</h1>
+        <Link to="/newMovie">
           <button className="productAddButton">Create</button>
         </Link>
       </div>

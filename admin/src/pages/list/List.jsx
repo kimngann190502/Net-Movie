@@ -1,15 +1,17 @@
 import { Link, useLocation } from "react-router-dom";
 import "./list.css";
-import React from 'react'
-import { Publish } from "@material-ui/icons";
+import { AuthContext } from "../../context/authContext/AuthContext";
+import { updateList} from "../../context/listContext/apiCalls";
+import { useContext } from "react";
 
 export default function List() {
+  const {dispatch} = useContext(AuthContext);
   const location = useLocation();
   const list = location.list;
   return (
     <div className="product">
       <div className="productTitleContainer">
-        <h1 className="productTitle">List</h1>
+        <h1 className="productTitle">Edit List</h1>
         <Link to="/newList">
           <button className="productAddButton">Create</button>
         </Link>
@@ -45,9 +47,7 @@ export default function List() {
             <label>Genre</label>
             <input type="text" placeholder={list.genre} />
           </div>
-          <div className="productFormRight">
-            <button className="productButton">Update</button>
-          </div>
+          <button onClick={() => dispatch(updateList())} className="productButton">Update</button>
         </form>
       </div>
     </div>
